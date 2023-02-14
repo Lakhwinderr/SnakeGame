@@ -79,9 +79,7 @@ function gameEngine(){
     // Display the snake
     board.innerHTML = "";
     snakeArr.forEach((e, index)=>{
-        snakeElement = document.createElement('div');
-        snakeElement.style.gridRowStart = e.y;
-        snakeElement.style.gridColumnStart = e.x;
+        
 
         if(index === 0){
             snakeElement.classList.add('head');
